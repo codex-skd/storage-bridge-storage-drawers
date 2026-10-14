@@ -1,0 +1,61 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="storage_bridge_storage_drawers.png"
+description='''
+Automatic item transfer between Storage Drawers controllers and storage inventories from other mods, using each mod's own capability - no hoppers, no pipes.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="storagedrawers"
+    type="required"
+    versionRange="[13.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="apothic_enchanting"
+    type="required"
+    versionRange="[1.6.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="sophisticatedstorage"
+    type="required"
+    versionRange="[1.5.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="apotheosis"
+    type="required"
+    versionRange="[8.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="placebo"
+    type="required"
+    versionRange="[9.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
